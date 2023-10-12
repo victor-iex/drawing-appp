@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <title>portfolio</title>
+
+</head>
+<body>
+  <h1>Add Two Numbers</h1>
+  <input type="number" id="num1" placeholder="Enter the first number"><br><br>
+  <input type="number" id="num2" placeholder="Enter the second number"><br><br>
+ 
+  <button onclick="addNumbers()">Add</button><br><br>
+  <button onclick="subNumbers()">Sub</button><br>
+  <button onclick="mutiplyNumber()">multiply</button><br>
+  <button onclick="divNumber()">Div</button><br>
+  <p>Result: <span id="result"></span></p>
+
+  <script>
+    function addNumbers() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var sum = num1 + num2;  
+      document.getElementById("result").textContent = sum;
+      console.log(sum);
+    }
+    function subNumbers(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var sum = num1 - num2;
+      document.getElementById("result").textContent = sum;
+      console.log(sum);
+    }
+    function multiplyNumber(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var sum = num1 * num2;
+      document.getElementById("result").textContent = sum;
+      console.log(sum);
+    }
+    function divNumber(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var sum = num1 / num2;
+      document.getElementById("result").textContent = sum;
+      console.log(sum);
+    }
+  </script>
+</body>
+</html>
